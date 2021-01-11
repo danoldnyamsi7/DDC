@@ -1,9 +1,9 @@
 
 
-var input = Number(prompt('how many numbers will you need'));
-var numbers = [];
+let input = Number(prompt('how many numbers will you need'));
+let numbers = [];
 for(let i=1; i<=input; i++){
-    var digits = Number(prompt('number : ' + i));
+    let digits = Number(prompt('number : ' + i));
     numbers.push(digits);
 }
 
