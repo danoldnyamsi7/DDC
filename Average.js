@@ -1,7 +1,16 @@
 
-//when using rest and spread operators it is of no use to use an array and push values to it the rest operator does that for you
 
-let average = (...numbers) => {
-    let getAverage = numbers.reduce((sum,number) =>sum + number,0)/numbers.length;
+var input = Number(prompt('how many numbers will you need'));
+var numbers = [];
+for(let i=1; i<=input; i++){
+    var digits = Number(prompt('number : ' + i));
+    numbers.push(digits);
 }
-average(1,2,3,4,5);
+
+let sum = numbers.reduce((total,items) =>{
+    return total + items;
+},0);
+
+let nod = numbers.length;
+alert('the average of ' + numbers + ' is : ' + sum/nod);
+
